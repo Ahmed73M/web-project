@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product1 | Mobile Store</title>
+    <link rel="stylesheet" href="../css/item.css">
+    <link rel="icon" href="../images/greenpulsehouse.png">
+</head>
+<body>
+    
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"> <img src="images/logo.png" alt="" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="Menuitems">
+                <li><a href="../account/account.html">Account</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="../Furnitures/Furniture.html">Furniture</a></li>
+                <li><a href="../clothes/clothes.html">Clothes</a></li>
+                <li><a href="../Beauty/Beauty.html">Beauty & Care</a></li>
+                <li><a href="../hygine/hygine.html">Hygine</a></li>
+                <li><a href="../kitchen/kitchen.html">Kitchen</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+             
+                
+            </ul>
+        </nav>
+    <img src="../images/cart.png" width="30px" height="30px">
+    <img src="../images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+<!-- product1 details  -->
+<div class="small-container product1">
+    <div class="row">
+       <div class="col-2">
+        <img src="../images/greenpulsehouse.png" width="100%" >
+
+       </div>
+       <div class="col-2">
+        <p>Furniture</p>
+        <h1>1</h1>
+        <h4>$1399.99</h4>
+        <select>
+            <option>Select Color</option>
+            <option>Graphite</option>
+            <option>Silver</option>
+            <option>Gold</option>
+            <option>Alpine Green</option>
+            <option>Sierra Blue</option>
+        </select>
+        <input type="number" value="1">
+        <a href="" class="btn">Add to cart</a>
+        <h3>Product Details</h3> <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis, maxime quia, doloremque a debitis iste deserunt ipsum enim excepturi magnam officia? Ipsa odit praesentium maiores aliquam! Ullam, vel modi.</p>
+       </div>
+    </div>
+    <br> <br> <br>
+<!-- title  -->
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+    </div>
+</div>
+</div>
+
+<!-- js for toggle menu  -->
+<script>
+    var Menuitems = document.getElementById("Menuitems");
+    Menuitems.style.maxHeight = "0px";
+    function menutoggle(){
+        if ( Menuitems.style.maxHeight == "0px")
+        {
+            Menuitems.style.maxHeight = "200px"
+        }
+        else
+        {
+            Menuitems.style.maxHeight = "0px"
+        }
+    }
+</script>
+</body>
+</html>

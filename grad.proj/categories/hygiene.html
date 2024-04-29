@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GreenPulseHub</title>
+    <link rel="icon" href="images/greenpulsehouse.png">
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+    
+    <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="../images/greenpulsehouse.png" alt="" width="125px">
+        </div>
+    <nav>
+        <ul id="Menuitems">
+            <li><a href="">Home</a></li>
+            <li><a href="../Furnitures/Futniture.html">Furniture</a></li>
+            <li><a href="../clothes/clothes.html">Clothes</a></li>
+            <li><a href="../Beauty/Beauty.html">Beauty & Care</a></li>
+            <li><a href="hygine.html">Hygine</a></li>
+            <li><a href="../kitchen/kitchen.html">Kitchen</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="../account.html">Account</a></li>
+        </ul>
+    </nav>
+    <img src="../images/cart.png" width="30px" height="30px">
+    <img src="../images/menu.png" class="menu-icon" onclick="menutoggle()" width="30px"
+    height="30px">
+    </div>
+
+<!-- featured products -->
+<div class="small-container">
+    <div class="row row2">
+        <h2>All Products</h2>
+        <select>
+            <option>Default Sorting</option>
+            <option>Show By Price</option>
+            <option>Sort by popularity</option>
+            <option>Sort by sale</option>
+            
+
+            
+        </select>
+    </div>
+
+
+    <div class="row">
+    
+        <div class="col-4">
+            <a href="product1.html"><img src="../images/greenpulsehouse.png"></a>
+            <h4>Chair</h4>
+            <p>$1399.99</p>
+        </div>
+        <div class="col-4">
+            <a href="product2.html"><img src="../images/greenpulsehouse.png"></a>
+            <h4>Chair</h4>
+            <p>$1399.99</p>
+        </div>
+        <div class="col-4">
+            <a href="product3.html"><img src="../images/greenpulsehouse.png"></a>
+            <h4>Chair</h4>
+            <p>$1399.99</p>
+        </div>
+        <div class="col-4">
+            <a href="product1.html"><img src="../images/greenpulsehouse.png"></a>
+            <h4>Chair</h4>
+            <p>$799.99</p>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <a href="product1.html"><img src="../images/greenpulsehouse.png"></a>
+                <h4>Chair</h4>
+                <p>$1799.99</p>
+            </div>
+            <div class="col-4">
+                <a href="product1.html"><img src="../images/greenpulsehouse.png"></a>
+                <h4>Chair</h4>
+                <p>$1899.99</p>
+            </div>
+            <div class="col-4">
+                <a href="product1.html"><img src="../images/greenpulsehouse.png"></a>
+                <h4>Chair</h4>
+                <p>$39.99</p>
+            </div>
+            <div class="col-4">
+                <a href="product1.html"><img src="../images/greenpulsehouse.png"></a>
+                <h4>Chair</h4>
+                <p>$799.99</p>
+            </div>
+            <br>
+            <div class="page-btn">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>&#8594</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        var Menuitems = document.getElementById("Menuitems");
+        Menuitems.style.maxHeight = "0px";
+        function menutoggle(){
+            if ( Menuitems.style.maxHeight == "0px")
+            {
+                Menuitems.style.maxHeight = "200px"
+            }
+            else
+            {
+                Menuitems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+    </body>
